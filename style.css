@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  margin: 0;
+  font-family: Times New Roman;
+  min-height: 200vh;
+  background-image: url('images/banner.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+div#parallax {
+  padding-top: 62.5%;
+  overflow: hidden;
+  position: relative;
+  font-size: .1em;
+}
+div#parallax * {
+  position: absolute;
+}
+div#parallax .test {
+  width: 40%; height: auto;
+  box-shadow: 0 .2em 8px 4px rgba(0,0,0,0.5);
+}
+div#parallax h1 {
+  font-size:3rem;
+  color: #EEEEEE;
+  z-index: 2;
+  top: 0;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 .2em 5px rgba(0,0,0,0.4);
+  position: fixed;
+}
+#parallax .test {
+  left: 5%;
+  bottom: 22em;
+  border: 5px solid red;
+}
+#parallax img:nth-of-type(3) {
+  left: 55%; bottom: 12em;
+}
+.footer {
+  background: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: #00ADB4;
+  opacity: 0.5;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+  color: #00ADB4;
+}
