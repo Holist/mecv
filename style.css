@@ -71,7 +71,7 @@ body {
 }
 
 .fixed {
-  position: fixed;
+  position: sticky;
   z-index: 1;
   height: 72px;
   top: 0;
