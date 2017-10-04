@@ -1,71 +1,78 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+/* Divers
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+Colors
+
+light : #F0F5F9;
+a bit darker : #E9ECEF;
+darker : #C9D6DF;
+darker but not so much : #52616B;
+dark as hell : #1E2022;
+
+links & hover : #048998;
+
+*/
 
 body {
-  margin: 0;
-  font-family: Times New Roman;
-  min-height: 200vh;
-  background-image: url('images/banner.jpeg');
-  background-size: cover;
-  background-attachment: fixed;
+  height: 200vh;
 }
-div#parallax {
-  padding-top: 62.5%;
-  overflow: hidden;
-  position: relative;
-  font-size: .1em;
-}
-div#parallax * {
-  position: absolute;
-}
-div#parallax .test {
-  width: 40%; height: auto;
-  box-shadow: 0 .2em 8px 4px rgba(0,0,0,0.5);
-}
-div#parallax h1 {
-  font-size:3rem;
-  color: #EEEEEE;
-  z-index: 2;
-  top: 0;
-  text-transform: uppercase;
+
+#navbar {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: #C9D6DF;
+  transition: all 0.3s ease;
+  height: 72px;
   width: 100%;
-  text-align: center;
-  text-shadow: 0 .2em 5px rgba(0,0,0,0.4);
-  position: fixed;
-}
-#parallax .test {
-  left: 5%;
-  bottom: 22em;
-  border: 5px solid red;
-}
-#parallax img:nth-of-type(3) {
-  left: 55%; bottom: 12em;
-}
-.footer {
-  background: #EEEEEE;
+  padding: 0px 30px 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
 }
-.footer-links {
+
+.navbar-github img {
+  height: 65px;
+}
+
+.navbar-menus {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.footer-links a {
-  color: #00ADB4;
-  opacity: 0.5;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
+
+.navbar-item {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
 }
-.footer-links a:hover {
-  opacity: 1;
-  color: #00ADB4;
+
+.navbar-link {
+  color: #1E2022;
+  font-size: 14px;
+}
+.navbar-link:hover {
+  color: #048998;
+}
+
+.a-propos {
+  background-color: #F0F5F9;
+  padding-top: 25px;
+}
+
+.a-propos-content {
+  padding: 25px;
+}
+
+.whoami {
+  padding-top: 72px;
+  background-color: #E9ECEF;
+  height: 200px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
+  height: 72px;
+  top: 0;
 }
