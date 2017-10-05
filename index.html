@@ -45,10 +45,10 @@
 
 
 
-<div class="a-propos">
+<div class="section a-propos">
   <p class="title text-center"><strong>A propos de moi</strong></p>
 
-  <div class="row a-propos-content">
+  <div class="row section-content">
     <div class="col col-sm-4 photo">
       <img src="images/myAvatar.png" alt="Romain Neuville" width="230" height="230">
     </div>
@@ -58,29 +58,180 @@
   </div>
 </div>
 
-<div class="competences">
+
+
+
+<div class="section competences">
   <p class="title text-center"><strong>Compétences</strong></p>
 
-  <div class="row">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
 
-    <div class="col comp-dev">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quis facilis harum cumque aperiam quaerat quod, dignissimos dolores quidem, at ad? In, minima reprehenderit nobis. Perspiciatis et rerum, eveniet repudiandae.</p>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/dev.jpg');">
+          <div class="card-description">
+            <h2>Developpement web full-stack</h2>
+          </div>
+          <div class="card-link"></div>
+        </div>
+
+        <div class="skill-content">
+            <div id="accordion">
+
+              <div class="d-flex mt-3 mb-1 justify-content-between badge-card accordion-toggle">
+                <div class="d-flex flex-column justify-content-end badge-card-details">
+                  <img class="skill-card-icon p-2" src="images/rails.png" alt="Rails" width="100" height="100">
+                </div>
+                <div class="d-flex align-items-center text-center mr-5">
+                  <p class="badge-card-name">RAILS</p>
+                </div>
+              </div>
+              <div class="objective-decription accordion-content ml-3">
+                <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem, sequi ab. Sit, quos, veniam. Perspiciatis consequuntur, sunt esse fuga ducimus cum deserunt, quisquam molestiae reprehenderit eveniet, rerum quos saepe.</p>
+
+              </div>
+
+              <div class="d-flex mt-3 mb-1 justify-content-between badge-card accordion-toggle">
+                <div class="d-flex flex-column justify-content-end badge-card-details">
+                  <img class="skill-card-icon p-2" src="images/ruby.png" alt="Ruby" width="100" height="100">
+                </div>
+                <div class="d-flex align-items-center text-center mr-5">
+                  <p class="badge-card-name">RUBY</p>
+                </div>
+              </div>
+              <div class="objective-decription accordion-content ml-3">
+                <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/sys.jpg');">
+          <div class="card-description">
+            <h2>Administration systémes et réseaux</h2>
+          </div>
+          <div class="card-link"></div>
+        </div>
+      </div>
+
     </div>
-
-    <div class="col comp-sys">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa corporis repudiandae eius aperiam saepe, quasi iusto. Minima neque, incidunt? Quis exercitationem eius, at nihil dolor quisquam accusamus corrupti architecto delectus!</p>
-    </div>
-
   </div>
 </div>
 
 
+
+<!--
+
+
+<div class="skill-card d-flex flex-row">
+  <img class="skill-card-icon p-2" src="images/rails.png" alt="Rails" width="100" height="100">
+  <div class="skill-card-content p-2">
+      <p class="skill-card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur vitae beatae nobis nam pariatur perspiciatis provident eos fugit. Pariatur totam voluptatem dolore architecto vitae deleniti minima accusamus. Minima, enim.</p>
+  </div>
+</div>
+
+
+
+
+ -->
+
+
+<!--   <div class="row section-content">
+
+    <div class="col col-sm-6">
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/rails.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/SQL.png" alt="" width="100" height="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/postgresql.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/ruby.png" alt="" width="100" height="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/front.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/git.png" alt="" width="100" height="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/google.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/boostrap.png" alt="" width="100" height="100">
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-sm-6">
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/citrix.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/firewall.png" alt="" width="100" height="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/lan2.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/linux.png" alt="" width="100" height="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/microsoft.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/server.png" alt="" width="100" height="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm6">
+          <img src="images/san.png" alt="" width="100" height="100">
+        </div>
+        <div class="col col-sm6">
+          <img src="images/vmware2.png" alt="" width="100" height="100">
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+
+
 <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
 <script>
+
+  $(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+    });
+  });
+
 var num = 200; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
