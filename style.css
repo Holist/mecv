@@ -93,20 +93,50 @@ body {
 .a-propos {
   background-color: #F0F5F9;
 }
-
 .competences {
   background-color: white;
 }
-
 .section-content {
   padding: 35px 100px 35px 100px;
 }
-
 .section {
   padding-top: 1.563rem; /* 25/16 */
 }
-.skill-card {
-  border: 1px solid black;
-  width: 600px;
-  height: 200px;
+
+
+#accordion img {
+  width: 23%;
+  height: 90%;
+  padding-top: 8px;
+}
+
+.accordion-toggle {
+  height: 10vh;
+  cursor: zoom-in;
+  color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border-radius: 2px;
+  background-color: #F0F5F9;
+}
+.badge-card-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.objective-decription {
+  color: black;
+  background-color: rgba(204, 204, 204, 0.3);
+  border-radius: 2px;
+  border-left: 2px solid rgb(159, 159, 159);
+  padding: 1.25rem; /* 20/16 */
+}
+.accordion-content {
+  display: none;
+  background-color: #F0F5F9;
+  border-radius: 2px;
+  border-left: 1px solid  #52616B;
+  padding: 1.25rem; /* 20/16 */
 }
