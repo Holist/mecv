@@ -169,13 +169,7 @@ ul {
 
 
 
-h1 {
-   text-align: center;
-   font-weight: 300;
-   color: #777
-}
-
-.container2 {
+.timeline {
    width: 80%;
    padding: 50px 0;
    margin: 50px auto;
@@ -183,7 +177,7 @@ h1 {
    overflow: hidden;
 }
 
-.container2:before {
+.timeline:before {
    content: '';
    position: absolute;
    top: 0;
@@ -223,8 +217,8 @@ h1 {
    width: 16px;
    height: 16px;
    border-radius: 50%;
-   border: 2px solid #F5F7FA;
-   background: #4FC1E9;
+   border: 2px solid #F0F5F9;
+   background: #048998;
    margin-top: 10px;
    z-index: 5
 }
@@ -262,7 +256,7 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-   .container2:before {
+   .timeline:before {
       left: 8px;
       width: 2px;
    }
