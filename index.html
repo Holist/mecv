@@ -23,9 +23,9 @@
 </head>
 <body>
 
-<div class="whoami text-center">
+<div class="whoami text-center" id='about'>
   <h2>Romain Neuville</h2>
-  <p>Developper Web Full stack junior & Sysadmin senior</p>
+  <p>Développeur Web Full Stack junior & Sysadmin senior</p>
 </div>
 
 <div id="navbar">
@@ -34,11 +34,11 @@
     <img src="images/github.png" alt="github">
   </a>
 
-  <a href="" class="navbar-item navbar-link">A propos</a>
-  <a href="" class="navbar-item navbar-link">Compétences</a>
+  <a href="#about" class="navbar-item navbar-link">A propos</a>
+  <a href="#skills" class="navbar-item navbar-link">Compétences</a>
+  <a href="" class="navbar-item navbar-link">Expérience & Formations</a>
   <a href="" class="navbar-item navbar-link">Réalisations</a>
-  <a href="" class="navbar-item navbar-link">Expérience & formations</a>
-  <a href="" class="navbar-item navbar-link">Interets</a>
+  <a href="" class="navbar-item navbar-link">Intérêts</a>
   <a href="" class="navbar-item navbar-link">Contact</a>
 
 </div>
@@ -59,131 +59,249 @@
 </div>
 
 
-
-
-<div class="section competences">
+<div class="section competences" id="skills">
   <p class="title text-center"><strong>Compétences</strong></p>
 
   <div class="container">
     <div class="row">
+
+<!-- Compétences Dev -->
+
       <div class="col-xs-12 col-sm-6">
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/dev.jpg');">
           <div class="card-description">
-            <h2>Developpement web full-stack</h2>
+            <h2>Développement Web Full Stack</h2>
           </div>
           <div class="card-link"></div>
         </div>
 
-        <div class="skill-content">
+        <div class="skill-content-dev">
           <div id="accordion">
 
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/rails.png" alt="Rails">
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/backend.jpg');">
+              <div class="card-description">
+                <h2>Back-End</h2>
               </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">RAILS</p>
-              </div>
+              <div class="card-link"></div>
             </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem, sequi ab. Sit, quos, veniam. Perspiciatis consequuntur, sunt esse fuga ducimus cum deserunt, quisquam molestiae reprehenderit eveniet, rerum quos saepe.</p>
-            </div>
-
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/ruby.png" alt="Ruby">
-              </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">RUBY</p>
-              </div>
-            </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
+            <div class="accordion-content">
+              <ul>
+                <li>Pattern MVC</li>
+                <li>OOP : Ruby</li>
+                <li>Framework : Rails</li>
+                <li>Gems : Devise, Pundit, i18n, CMS divers, Capistrano...</li>
+                <li>Microsoft : Powershell</li>
+                <p>Déploiement :</p>
+                <li>Heroku</li>
+                <li>Serveur Web NGinx, Apache et IIS</li>
+              </ul>
             </div>
 
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/SQL.png" alt="SQL">
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/frontend.png');">
+              <div class="card-description">
+                <h2>Front-End</h2>
               </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">SQL</p>
-              </div>
+              <div class="card-link"></div>
             </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
-            </div>
-
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/postgresql.png" alt="postgresql">
-              </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">Postgresql</p>
-              </div>
-            </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
+            <div class="accordion-content">
+              <ul>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>JS, Jquery</li>
+                <li>Bootstrap 4</li>
+              </ul>
             </div>
 
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/front.png" alt="front">
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/workflow.jpg');">
+              <div class="card-description">
+                <h2>Workflow</h2>
               </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">Front</p>
-              </div>
+              <div class="card-link"></div>
             </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
-            </div>
-
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/git.png" alt="git">
-              </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">Git</p>
-              </div>
-            </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
+            <div class="accordion-content">
+              <ul>
+                <li>Git et GitHub</li>
+                <li>Trello</li>
+                <li>Slack</li>
+                <li>Loomio</li>
+              </ul>
             </div>
 
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/google.png" alt="google">
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/bdd.jpg');">
+              <div class="card-description">
+                <h2>Base de donnée</h2>
               </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">Google</p>
-              </div>
+              <div class="card-link"></div>
             </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
+            <div class="accordion-content">
+              <ul>
+                <li>Postgresql sous Linux et Windows</li>
+                <li>Active Record Rails</li>
+                <li>SQL Server 2000 à 2012, maintenance</li>
+                <li>Redis (notions)</li>
+              </ul>
             </div>
 
-            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle">
-              <div class="d-flex ml-4">
-                <img class="skill-card-icon" src="images/boostrap.png" alt="boostrap">
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/Apis.png');">
+              <div class="card-description">
+                <h2>Apis</h2>
               </div>
-              <div class="d-flex align-items-center text-center mr-5">
-                <p class="badge-card-name">Boostrap</p>
-              </div>
+              <div class="card-link"></div>
             </div>
-            <div class="objective-decription accordion-content ml-3">
-              <p class="objective-decription-content mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam et quis id nihil quaerat, dolorum? Repellat debitis eum asperiores suscipit, eius dolorem obcaecati natus officiis necessitatibus quisquam praesentium aut quos.</p>
+            <div class="accordion-content">
+              <ul>
+                <li>Google Geocoding, Maps et Search</li>
+                <li>Facebook Connect & Graph</li>
+                <li>Stripe</li>
+                <li>Swapi :)</li>
+              </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/tools.jpeg');">
+              <div class="card-description">
+                <h2>Outils</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content">
+              <ul>
+                <li>Apple MacOS Sierra</li>
+                <li>Microsoft Windows</li>
+                <li>Ubuntu Desktop</li>
+                <li>Sketch et Gravit (débutant)</li>
+                <li>Marvel (débutant)</li>
+              </ul>
             </div>
 
           </div>
         </div>
       </div>
 
+<!-- Compétences Systèmes et Réseaux -->
+
       <div class="col-xs-12 col-sm-6">
 
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/sys.jpg');">
           <div class="card-description">
-            <h2>Administration systémes et réseaux</h2>
+            <h2>Administration systèmes et réseaux</h2>
           </div>
           <div class="card-link"></div>
+        </div>
+
+        <div class="skill-content-sys">
+          <div id="accordion2">
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/microsoft2.png');">
+              <div class="card-description">
+                <h2>Microsoft</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+             <ul>
+               <li>Server 2003 à 2016, installation, configuration et maintenance d'un parc</li>
+               <li>Rôles : AD, DNS, DHCP, DFS, RDS, WSUS...</li>
+               <li>Trés bonne maitrise des GPO</li>
+             </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/tux.png');">
+              <div class="card-description">
+                <h2>Linux</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+              <ul>
+                <p>Installation, configuration et maintenance :</p>
+                <li>Red Hat Enterprise</li>
+                <li>Debian</li>
+                <li>Ubuntu</li>
+                <li>CentOS</li>
+              </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/networks2.jpg');">
+              <div class="card-description">
+                <h2>Réseaux</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+              <ul>
+                <li>Mise en place de DMZ et proxy</li>
+                <li>Outils de supervision : IMC, Observium, Omnivista, Cacti, H5</li>
+                <li>Routage, vlans et virtualisation de réseaux (Juniper, Alcatel, HP, H3C...)</li>
+                <li>Réseaux Wifi (Mise en place et suivi, Alcatel, Aruba)</li>
+              </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/security.png');">
+              <div class="card-description">
+                <h2>Sécurité</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+              <ul>
+                <li>Installation, configuration et maintenance :</li>
+                <p>Ipcop, Arkoon, Watchguard, Iptable et Stormshield</p>
+                <li>Mise en place de réseaux VPN</li>
+                <li>Proxy Web Olfeo</li>
+              </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/virtualisation.jpg');">
+              <div class="card-description">
+                <h2>Virtualisation</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+              <ul>
+                <li>Utilisation de Vmware depuis la 2.5, gestion d'un parc de 200 VM</li>
+                <li>Installation, configuration et maintenance Vsphere 5.5 et 6.0, Vcenter...</li>
+                <li>Veeam One Monitor</li>
+                <li>Installation, configuration et troubleshooting avancé de virtualisation applicative via RDS et Citrix</li>
+                <li>Fermes Citrix 4.0, 4.5, Xenapp 5 et 7.6</li>
+              </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/systems.jpg');">
+              <div class="card-description">
+                <h2>Systèmes</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+              <ul>
+                <li>IBM (Bladecenter, SAN, Switches Fibre Channel)</li>
+                <li>Lenovo Serveurs SystemX</li>
+                <li>NetApp (SAN)</li>
+                <li>NAS Synology</li>
+                <li>AS400 et Client Access</li>
+              </ul>
+            </div>
+
+            <div class="d-flex mt-3 mb-1 justify-content-between accordion-toggle2 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/software.jpg');">
+              <div class="card-description">
+                <h2>Logiciels</h2>
+              </div>
+              <div class="card-link"></div>
+            </div>
+            <div class="accordion-content2">
+              <ul>
+                <li>Veeam Backup and Replication</li>
+                <li>ArcServ Backup</li>
+                <li>Lotus Notes et Domino 6, 7, 8.5 et 9.</li>
+                <li>Infoblox (IPAM)</li>
+                <li>GLPI</li>
+                <li>Office, toutes versions</li>
+                <li>Logiciels spécifiques au domaine de la santé</li>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -192,47 +310,19 @@
 </div>
 
 
-
-<!--
-
-
-    <div class="col col-sm-6">
-      <div class="row">
-        <div class="col col-sm6">
-          <img src="images/citrix.png" alt="" width="100" height="100">
-        </div>
-        <div class="col col-sm6">
-          <img src="images/firewall.png" alt="" width="100" height="100">
-        </div>
+<div class="section formations" id='formations'>
+  <p class="title text-center"><strong>Expériences et Formations</strong></p>
+  <div class="container">
+    <div class="row section-content">
+      <div class="col-xs-12 col-sm-6">
+        <h1>Développement</h1>
       </div>
-      <div class="row">
-        <div class="col col-sm6">
-          <img src="images/lan2.png" alt="" width="100" height="100">
-        </div>
-        <div class="col col-sm6">
-          <img src="images/linux.png" alt="" width="100" height="100">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-sm6">
-          <img src="images/microsoft.png" alt="" width="100" height="100">
-        </div>
-        <div class="col col-sm6">
-          <img src="images/server.png" alt="" width="100" height="100">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-sm6">
-          <img src="images/san.png" alt="" width="100" height="100">
-        </div>
-        <div class="col col-sm6">
-          <img src="images/vmware2.png" alt="" width="100" height="100">
-        </div>
+      <div class="col-xs-12 col-sm-6">
+        <h1>Systémes et Réseaux</h1>
       </div>
     </div>
-
-  </div> -->
-
+  </div>
+</div>
 
 
 <script
@@ -242,6 +332,7 @@
 
 <script>
 
+  // Accordions
   $(document).ready(function($) {
     $('#accordion').find('.accordion-toggle').click(function(){
       //Expand or collapse this panel
@@ -251,15 +342,46 @@
     });
   });
 
-var num = 200; //number of pixels before modifying styles
+  $(document).ready(function($) {
+    $('#accordion2').find('.accordion-toggle2').click(function(){
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+      //Hide the other panels
+      $(".accordion-content2").not($(this).next()).slideUp('fast');
+    });
+  });
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-        $('#navbar').addClass('fixed');
-    } else {
-        $('#navbar').removeClass('fixed');
+  // Fixed Navbar
+  var num = 200; //number of pixels before modifying styles
+
+  $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > num) {
+          $('#navbar').addClass('fixed');
+      } else {
+          $('#navbar').removeClass('fixed');
+      }
+  });
+
+  // Anchors
+  // The function actually applying the offset
+  function offsetAnchor() {
+    if (location.hash.length !== 0) {
+      window.scrollTo(window.scrollX, window.scrollY - 72);
     }
-});
+  }
+
+  // Captures click events of all a elements with href starting with #
+  $(document).on('click', 'a[href^="#"]', function(event) {
+    // Click events are captured before hashchanges. Timeout
+    // causes offsetAnchor to be called after the page jump.
+    window.setTimeout(function() {
+      offsetAnchor();
+    }, 0);
+  });
+
+  // Set the offset when entering page with hash present in the url
+  window.setTimeout(offsetAnchor, 0);
+
 </script>
 
 </body>
